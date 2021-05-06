@@ -4,6 +4,7 @@ DataSets
 --
 - https://github.com/NVlabs/ffhq-dataset
 - https://github.com/cabani/MaskedFace-Net
+- https://www.kaggle.com/omkargurav/face-mask-dataset
 
 Resources 
 --
