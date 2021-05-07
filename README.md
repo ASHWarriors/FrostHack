@@ -16,3 +16,4 @@ Resources
 - https://www.pyimagesearch.com/2020/06/01/opencv-social-distancing-detector/
 
 - https://github.com/achen353/Face-Mask-Detector
+- https://github.com/pierluigiferrari/ssd_keras
