@@ -25,7 +25,7 @@ SECRET_KEY = '+4$7=#_#c$yox96jd*zfir2#6@$ii0hxv&b5fgzvd5-yfgxu$w'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['198.211.99.20', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -54,7 +54,7 @@ ROOT_URLCONF = 'WebApp.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR,'E:/ASHTrinity-FrostHack/ASHTrinity-FrostHack/BestApp/templates/'],
+        'DIRS': [BASE_DIR,'E:/ASHTrinity-FrostHack/ASHTrinity-FrostHack/BestApp/static/templates/'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -116,5 +116,8 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
-
-STATIC_URL = '/static/'
+import os
+STATIC_URL = '/static/assets/'
+STATICFILES_DIRS=[
+    os.path.join(BASE_DIR,'static'),
+    '/ASHTrinity-FrostHack/ASHTrinity-FrostHack/BestApp/static/assets/',]
